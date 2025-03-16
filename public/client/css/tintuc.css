@@ -1,0 +1,47 @@
+ /* Content */
+.content {
+  
+    margin-top: 20px;
+  }
+  
+  .box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: 0.3s;
+  }
+  
+  
+  .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .box h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  
+  .box p {
+    color: #6c757d;
+    text-align: justify; /* Căn đều đoạn văn */
+    line-height: 1.6; /* Giãn dòng giúp dễ đọc hơn */
+    margin: 0 5px;
+  }
+  .box .text_img{
+    display: flex;
+    margin-left: 10px;
+   
+    
+  }
+  .box .text_img img{
+      margin-right: 15px;
+      border-radius: 10px;
+      width: 30%;
+      height: 200px;
+  }
+  .box .text_img p{
+   width: 70%;
+  }

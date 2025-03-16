@@ -1,0 +1,181 @@
+main{
+    display: flex;
+}
+aside{
+    width: 30%;
+
+}
+section{
+    width: 100%;
+
+}
+.sidebar {
+    background: #fff;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    /* position: fixed; */
+    height: auto;
+    width: 200px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.sidebar.hidden {
+    width: 20px;
+    padding: 5px;
+}
+
+.product-section {
+    /* margin-left: 220px; */
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+    color: #d9503f;
+}
+
+/*  */
+/* Phần chứa thanh sắp xếp */
+.sort-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Nhãn "Sắp xếp theo:" */
+.sort-bar span {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Nút sắp xếp */
+.sort-bar button {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sort-bar button:hover {
+    background: #d9503f;
+    color: white;
+    border-color: #d9503f;
+}
+
+/* Hiệu ứng khi nút đang được chọn */
+.sort-bar button:focus,
+.sort-bar button.active {
+    background: #d9503f;
+    color: white;
+    border-color: #d9503f;
+}
+
+/* Dropdown chọn giá */
+.sort-bar select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.sort-bar select:hover {
+    border-color: #d9503f;
+}
+
+/* // */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    /* Tạo grid động */
+    gap: 20px;
+    padding: 10px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+    background: #ddd;
+    height: 200px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.product-info h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-weight: bold;
+    color: #e74c3c;
+    font-size: 18px;
+}
+
+.discount-price {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #777;
+}
+
+
+
+
+
+
+

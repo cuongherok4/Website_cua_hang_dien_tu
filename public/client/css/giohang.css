@@ -1,0 +1,116 @@
+       
+/* Phần tiêu đề giỏ hàng */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Bảng giỏ hàng */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+/* Cột tiêu đề */
+th {
+    text-align: center;
+    padding: 15px;
+    background-color: #ff6f61;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #ddd;
+}
+
+/* Cột dữ liệu */
+td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Căn chỉnh các nút trong bảng */
+button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff3c2b;
+}
+
+/* Căn chỉnh phần tổng tiền */
+.total {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.total span {
+    color: #ff6f61;
+    font-size: 22px;
+}
+
+/* Hiển thị số tiền trong bảng với định dạng dễ đọc */
+span {
+    font-weight: bold;
+}
+
+/* Nút xóa */
+a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff3c2b;
+}
+
+/* Kiểu cho checkbox */
+input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+/* Hiển thị thông báo nếu giỏ hàng trống */
+tr td[colspan="6"] {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+/* Hiệu ứng khi di chuột vào các ô trong bảng */
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Định dạng các nút "Xóa", "Thanh toán" */
+button {
+    margin-left: 10px;
+}
+
+button:disabled {
+    background-color: #ddd;
+}
+
+/* Căn chỉnh các ô và nút thanh toán */
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+

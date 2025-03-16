@@ -1,0 +1,42 @@
+.d-flex {
+    display: flex;
+    gap: 10px;
+    /* Tạo khoảng cách giữa các nút */
+    justify-content: flex-start;
+    /* Đảm bảo các nút căn trái */
+    align-items: center;
+    /* Canh giữa theo chiều dọc */
+}
+
+.btnchung {
+    display: flex;
+    /* Để có thể căn chỉnh icon và text */
+    align-items: center;
+    padding: 8px 16px;
+    /* Thêm khoảng đệm cho nút */
+    font-size: 14px;
+    /* Kích thước font chữ nhỏ vừa phải */
+    height: 40px;
+    /* Cố định chiều cao nút */
+}
+
+.btnchung i {
+    margin-right: 8px;
+    /* Khoảng cách giữa icon và text */
+}
+
+/* Điều chỉnh khoảng cách giữa các nút khi màn hình nhỏ */
+@media (max-width: 767px) {
+    .d-flex {
+        flex-direction: column;
+        /* Xếp các nút theo chiều dọc trên màn hình nhỏ */
+        align-items: flex-start;
+    }
+
+    .btnchung {
+        width: 100%;
+        /* Mỗi nút sẽ rộng bằng màn hình */
+        margin-bottom: 10px;
+        /* Tạo khoảng cách dưới mỗi nút */
+    }
+}

@@ -1,0 +1,25 @@
+-------------------------------- KHUNG WEB --------------
+
+- tạo thư mục sau :
+    +> Public thư mục này chứa các file css , js , image , upload của cả backen và fonent
+        + thư mục admin là chứa các file bên admin 
+        + còn frontend là phần giao diện bên ngoài
+    +> thư mục admin : thư muc này chứa các file , modules xử lý của admin (backend)
+    +> tiếp đến là thư mục autoload va file autoload.php 
+        + file này để gọi các file sử lý chung mà tất cả các file đều gọi 
+    +> thư mục lyouts 
+
+
+
+    --------------
+vào trong thư mục admin tạo tương tự
+    +> thư mục modules sẽ chứa các modules mà chúng ta quản lý hành viên , sản phẩm ...
+
+
+    +> tiếp theo là thư mục libraries 
+        + thư mục này mình sẽ tạo các file sử lý như 
+            + function
+            + DATABASE
+
+
+-----------------------------

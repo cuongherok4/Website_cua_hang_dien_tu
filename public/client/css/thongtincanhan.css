@@ -1,0 +1,96 @@
+.giua {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 60vh; Nếu muốn căn giữa theo cả chiều dọc */
+}
+
+.card {
+    width: 400px; /* Điều chỉnh kích thước thẻ card */
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+.card h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.input-group {
+    margin-bottom: 12px;
+    text-align: left;
+}
+.input-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.btn-save {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: 0.3s;
+}
+.btn-save:hover {
+    background: #0056b3;
+}
+.card h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.input-group {
+    margin-bottom: 12px;
+    text-align: left;
+}
+.input-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.btn-save {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: 0.3s;
+}
+.btn-save:hover {
+    background: #0056b3;
+}
