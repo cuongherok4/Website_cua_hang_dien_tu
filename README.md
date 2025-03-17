@@ -49,9 +49,64 @@
 ---
 
 
-## 🚀 Hướng Dẫn Cài Đặt & Chạy Dự Án  
-
+## 🚀 Hướng Dẫn Cài Đặt & Chạy Dự Án 
 ### 1️⃣ Clone dự án  
 ```sh
 git clone https://github.com/cuongherok4
 cd repository
+```md
+### 2️⃣ Cài đặt môi trường  
+Đảm bảo bạn đã cài đặt các công cụ cần thiết:  
+- PHP >= 7.4  
+- MySQL hoặc MariaDB  
+- Composer  
+- XAMPP hoặc LAMP (nếu chạy local)  
+
+### 3️⃣ Cài đặt dependencies  
+```sh
+composer install
+```
+
+### 4️⃣ Cấu hình file `.env`  
+Sao chép file `.env.example` và chỉnh sửa thông tin kết nối database:  
+```sh
+cp .env.example .env
+```
+Sau đó, mở file `.env` và cập nhật các thông số:  
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=tencuahang
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 5️⃣ Chạy migrations & seed database  
+```sh
+php artisan migrate --seed
+```
+
+### 6️⃣ Khởi động server  
+```sh
+php artisan serve
+```
+Mở trình duyệt và truy cập:  
+```
+http://127.0.0.1:8000
+```
+
+### 7️⃣ Tài khoản mặc định  
+- **Admin**:  
+  - Email: `admin'  
+  - Password: `123456`  
+- **Người dùng**:  
+  - Đăng ký trực tiếp trên website  
+
+---
+
+## 🎯 Liên Hệ Hỗ Trợ  
+📧 Email: cuongherok4@gmail.com  
+📞 Hotline: 0336388758 
+🌍 Website: [[www.tencuahang.com](www.tencuahang.com)  ](http://websitecuacuong2.wuaze.com/HMC/web/)
+
